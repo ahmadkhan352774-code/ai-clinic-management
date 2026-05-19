@@ -1,7 +1,9 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api',
+  baseURL:
+    import.meta.env.VITE_API_BASE_URL ||
+    'https://ai-clinic-management-production-39ab.up.railway.app/api',
   headers: {
     'Content-Type': 'application/json',
   },
